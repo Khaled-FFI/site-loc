@@ -1,1 +1,79 @@
+body {
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  background-color: #fff;
+}
 
+/* le centre plein écran */ 
+.hero {
+  height: 100vh; /*grande image pleine page avec le texte bien centré au milieu*/
+  background: url('cars.jpg') center/cover no-repeat;
+  color: white;
+  position: relative;
+}
+
+
+/* effet sombre par dessus l'image */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4); 
+}
+
+/*Pour que le texte sois au dessus de l'ombre */
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* quand on passe la souris dessus sa grossis */
+.offer-card img {
+  transition: transform 0.4s ease;
+}
+.offer-card img:hover {
+  transform: scale(1.05);
+}
+
+/* barre de navigation */
+.navbar-brand {
+  letter-spacing: -1px;
+}
+
+/* Cela rend le logo rond, ajuste la taille, et change légèrement la transparence.*/
+.logo { 
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+footer i.fa-instagram {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+footer i.fa-instagram {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+footer span.fw-bold {
+  font-size: 16px;
+}
+
+footer i.fa-instagram,
+footer i.fa-snapchat {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+footer span.fw-bold {
+  font-size: 16px;
+}
