@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Shop Ta Loc</title>
+  <!-- Image en haut de la page -->
+  <link rel="icon" type="image/x-icon" href="logo.ico"> 
+  <!-- Pour les icones snap et insta -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Activite bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Pour charger la police -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Fichier CSS -->
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <!-- Barre de navigation avec ombre -->
+ <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm"> <!-- bg-white shadow-sm -> belle couleur de bootstrap -->
+  <!-- sa sert à mettre le logo à gauche et l'écrite à droite -->
+  <div class="container d-flex align-items-center justify-content-between"> 
+    <!-- flexbox etc avec bootstrap --> 
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <!-- fichier de logo etc -->
+      <img src="logo.jpg" alt="Logo Shop Ta Loc" class="logo">
+      <!-- pour afficher le nom du site -->
+      <span class="fw-bold fs-4">Shop Ta Loc</span>
+      <!-- fermeture du lien avec le site -->
+    </a>
+    <!-- liste pour le bail de navigation -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="voit.html">Voitures</a></li>
+        <li class="nav-item"><a class="nav-link" href="mot.html">Motos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Centre de la page -->
+   <!-- princip du site et le header section importante et donne l'image aussi grace au css -->
+  <header class="hero d-flex align-items-center text-center">
+    <!-- Bootstrap aussi-->
+    <div class="container">
+      <!--Grand slogan du site-->
+      <h1 class="display-2 fw-bold">La liberté sur roues</h1>
+      <!--suite "publicitaire"-->
+      <p class="lead text-white">Découvrez nos voitures de luxe et nos motos pour vivre l’expérience ultime.</p>
+      <!--Bouton d'action et aussi liaison avec css-->
+      <a href="#offres" class="btn btn-dark btn-lg mt-3">Explorer</a>
+    </div>
+  </header>
+
+  <!-- Parti offre -->
+   <!--section du contenu offre sa créé une parti pour ses id-->
+  <section id="offres" class="py-5">
+    <div class="container">
+      <!--Mise en page propre-->
+      <!--Avec bootstrap signifie 2 colone-->
+      <div class="row g-5">
+        <!--Colonne 6 sur 12-->
+        <div class="col-md-6">
+          <!--Contien l'image, titre, texte-->
+          <div class="offer-card text-center">
+            <!--ajoute une image avec ombre etc-->
+            <img src="cars.jpg" alt="Voiture de luxe" class="img-fluid rounded shadow-sm mb-3">
+            <!--Texte-->
+            <h2 class="fw-bold">Voitures de luxe</h2>
+            <!--Texte avec effet doux-->
+            <p class="text-muted">Élégance, puissance et confort réunis.</p>
+            <!--Bouton qui amene vers l'autre site-->
+            <a href="voit.html" class="btn btn-outline-dark">Voir plus</a>
+          </div>
+          <!--Pour passer à l'autre colonne-->
+        </div>
+        <!--La mm  que avant-->
+        <div class="col-md-6">
+          <div class="offer-card text-center">
+            <img src="moto.webp" alt="Moto à louer" class="img-fluid rounded shadow-sm mb-3">
+            <h2 class="fw-bold">Motos</h2>
+            <p class="text-muted">La route, le vent, la liberté.</p>
+            <a href="mot.html" class="btn btn-outline-dark">Voir plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Sa permet de fermer la section offre-->
+  </section>
+
+  <!-- Bas de la page -->
+   <!-- balise de bas de page-->
+<footer class="bg-light py-4">
+  <!--Pour s'adapter au different écran-->
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+
+    <!--Affiche les crédits -->
+    <div>
+      <p class="mb-1 fw-bold">Crédits</p>
+      <p class="text-muted mb-2">Khaled • Amine • Mohamed • Mouss • Abdallah</p>
+      <p class="small text-muted mb-0">&copy; 2025 Shop Ta Loc</p>
+    </div>
+
+    <!--les logos insta et snap et le texte à coté-->
+    <div class="mt-3 mt-md-0 text-md-end d-flex flex-column align-items-end gap-2">
+      <a href="https://www.instagram.com/shop_ta_loc77" target="_blank" class="text-decoration-none d-flex align-items-center gap-2">
+        <i class="fab fa-instagram text-danger"></i>
+        <span class="fw-bold text-dark">Shop Ta Loc 77</span>
+      </a>
+      <a href="https://www.snapchat.com/add/shop_ta_loc77" target="_blank" class="text-decoration-none d-flex align-items-center gap-2">
+        <i class="fab fa-snapchat text-warning"></i>
+        <span class="fw-bold text-dark">Shop Ta Loc 77</span>
+      </a>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>
